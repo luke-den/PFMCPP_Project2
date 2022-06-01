@@ -15,10 +15,10 @@ video: Chapter 2 - Part 3
  
  
  1) Write down the names of the 6 major primitive types available in C++  here:
- 
- 
- 
- 
+ int
+float bool
+ double
+char unsigned int
  
  
  
@@ -63,11 +63,32 @@ video: Chapter 2 - Part 3
 void variableDeclarations()
 {
     //example:
-    int number = 2; //declaration of a variable named "number", that uses the primitive type 'int', and the variable's initial value is '2'
+    int number = 2; //declaration of a variable named "number", that uses the primitive type 'inint myHeight = 72;t'    int howManyTrees = 8;
+    int moneyEarned = 0;
+
+    float temperature = 32.0f;, and float rotations = 2.375f;
+    float exactChange = 12.86f;
+
+    bool doorIsOpen = true
+    bool makeASound = false
+    bool activateSwitch = true
+
+    double numberOfTracks = 4; 
+    double inputsAllowed = 24;
+    double eqModesShown = 6;
+
+    unsigned int balloonsPopped = 350;
+    unsigned int numberOfPlanesSeen = 9;
+    unsigned int horsesCompeting = 23;
+
+    ignoreUnused( number, myHeight, howManyTrees, moneyEarned, temperature, rotations, exactChange, doorIsOpen, makeASound, activateSwitch, numberOfTracks, inputsAllowed, eqModesShown, balloonsPopped, numberOfPlanesSeen, horsesCompeting);
+the vaignoreUnused(number);  is '2'
     
 
     
-    ignoreUnused(number); //passing each variable declared to the ignoreUnused() function
+    ignoreUnused(number); //passing each va
+
+/* declared to the ignoreUnused() function
 }
 
 /*
@@ -78,7 +99,7 @@ void variableDeclarations()
 bool rentACar(int rentalDuration, int carType = 0)  //function declaration with random number of arguments, arbitrary number of arguments have default value
 { 
     ignoreUnused(rentalDuration, carType); //passing each function parameter to the ignoreUnused() function
-    return {}; //if your function returns something other than void, add 'return {};' at the end of it.
+    return {}; //if your function returns something other than/*oi 1)ad */return {};' at the end of it.
 } 
 
 /*
