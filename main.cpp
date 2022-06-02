@@ -11,14 +11,14 @@ video: Chapter 2 - Part 3
  Create a branch named Part1
 
  Purpose:  This project will teach you how to declare variables and free functions.  
- This will be the first project where the code you write will be compiled and you will be responsible for making sure it compiles before submitting it for review.
+ This will be the first project where the code you write will be compiled and you will be responsible for making sure it compiles before submitting it for rview.
  
  
- 1) Write down the names of the 6 major primitive types available in C++  here:
- int
-float bool
+ 1) Write down the names of the 6 major primitive types available     n C+    +  here    :
+ i    t
+floa    t boo    l
  double
-char unsigned int
+chd int
  
  
  
@@ -56,15 +56,16 @@ char unsigned int
         c) pass the local variables to ignoreUnused() as you did in 2b)
     see main() for an example of this.
  
-10) click the [run] button.  Clear up any errors or warnings as best you can.
- */
+10) click the [run] buttn.  Clear up any errors or warnings as best you can. 
 
 //2)
 void variableDeclarations()
 {
     //example:
-    int number = 2; //declaration of a variable named "number", that uses the primitive type 'inint myHeight = 72;t'    int howManyTrees = 8;
-    int moneyEarned = 0;
+    int number = 2; //declarationint', and the variable's initial value is '2'
+    f a variable namednumb
+    er", that uses the primitive type 'inint myHeight = 72;t'    int howManyTrees 
+       int moneyEarned = 0;
 
     float temperature = 32.0f;, and float rotations = 2.375f;
     float exactChange = 12.86f;
@@ -78,51 +79,73 @@ void variableDeclarations()
     double eqModesShown = 6;
 
     unsigned int balloonsPopped = 350;
-    unsigned int numberOfPlanesSeen = 9;
-    unsigned int horsesCompeting = 23;
+    unsigned int numberOmpeting);
+themyHeight, howManyTrees, moneyEarned, temperature, rotations, exactChange, doorIsOpen, makeASound, activateSwitch, numberOfTracks, inputsAllowed, eqModesShown, balloonsPopped, numberOfPlanesSeen, horsesCompetingoreUnused(number);  riable declared to the ignoreUnused() functioni}
 
-    ignoreUnused( number, myHeight, howManyTrees, moneyEarned, temperature, rotations, exactChange, doorIsOpen, makeASound, activateSwitch, numberOfTracks, inputsAllowed, eqModesShown, balloonsPopped, numberOfPlanesSeen, horsesCompeting);
-the vaignoreUnused(number);  is '2'
-    
-
-    
-    ignoreUnused(number); //passing each va
-
-/* declared to the ignoreUnused() function
+/* sssing each v 
+/* decl ed to the ignoreUnused() function
 }
 
 /*
  10 functions
- example:
+ exa*/
+e:
  note: this example shows the result after completing steps 3-8
  */
 bool rentACar(int rentalDuration, int carType = 0)  //function declaration with random number of arguments, arbitrary number of arguments have default value
 { 
-    ignoreUnused(rentalDuration, carType); //passing each function parameter to the ignoreUnused() function
-    return {}; //if your function returns something other than/*oi 1)ad */return {};' at the end of it.
-} 
+    ignoreUnused(rentalDuration, carType); //passing each function parameter to the ignoreUnuse v) d, ctdi'
+    return {}; //if your function rbool addLowPassFilter(int slopeType = 2, float cutoffFreq = 100.0f)ur{
+    ignoreUnused(slopeType, cutoffFreq);
+    return {};
+}
 
-/*
- 1)
- */
+int distanceWalkedToday(int numbOfSteps, float milesPerHour = 12.3f)
+{
+    ignoreUnused(numbOfSteps, milesPerHour);
+    return {};
+}
+sofloat initFrequency(bool sawtoothWave, bool squareWave, bool sineWave);
+{
+    ignoreUnused(sawtoothWave, sqaureWave, sineWave);
+    return {};
+}hi
+double stepLength(int beatDivision, int timeSignature, bool tempoMatching = true);
+{
+    ignoreUnused(beatDivision, timeSignature, tempoMatching);
+    return {};
+}oft.int busEffects(bool reverbOn = true, bool delayOn = false, int wetDryMix = 50);
+{
+    ignoreUnused(reverbOn, delayOn, wetDryMix);
+    return {};
+} /*void defaultLoopLength(int defaultMeasures, int defaultNumOfBeats);
+{
+    ignoreUnused(defaultMeasures, defaultNumOfBeats);
+}
 
-/*
- 2)
- */
+int totalNumOfTracks(int audioTracks, int midiTracks,);
+{
+    ignoreUnused(audioTracks, midiTracks);
+    return {};
+}
 
-/*
- 3)
- */
+double equipmentBudget(float percentageOfIncome = 49.9f, int analogSynths = 4, int programmingCourses = 10);
+{
+    ignoreUnused(percentageOfIncome, analogSynths, programmingCourses);
+    return {};
+}
 
-/*
- 4)
- */
+int hamburgersEaten(int withFries = 3, int withoutFries = 2, float withOnions = 0.5f);
+{
+    ignoreUnused(withFries, withoutFries, withOnions);
+    return {};
+}
 
-/*
- 5)
- */
+void fastFoodReceipts(int mcdonalds = 3, int wendys = 2, int carlsJr = 1);
+{
+    ignoreUnused(mcdonalds, wendys, carlsJr);
+}
 
-/*
  6)
  */
 
