@@ -14,11 +14,12 @@ video: Chapter 2 - Part 3
  This will be the first project where the code you write will be compiled and you will be responsible for making sure it compiles before submitting it for rview.
  
  
- 1) Write down the names of the 6 major primitive types available     n C+    +  here    :
- i    t
-floa    t boo    l
- double
-chd int
+ 1) Write down the names of the 6 major primitive types available in C++ here:
+    int
+    float     bool
+    double
+    char
+    unsigned int
  
  
  
@@ -57,113 +58,114 @@ chd int
     see main() for an example of this.
  
 10) click the [run] buttn.  Clear up any errors or warnings as best you can. 
+*/
 
 //2)
 void variableDeclarations()
 {
     //example:
-    int number = 2; //declarationint', and the variable's initial value is '2'
-    f a variable namednumb
-    er", that uses the primitive type 'inint myHeight = 72;t'    int howManyTrees 
-       int moneyEarned = 0;
+    int number = 2; //declaration of a variable named "number", that uses the primitive type 'int', and the variable's initial value is '2'
+    int myHeight = 72;    
+    int howManyTrees = 8;
+    int moneyEarned = 0;
 
-    float temperature = 32.0f;, and float rotations = 2.375f;
+    float temperature = 32.0f; 
+    float rotations = 2.375f;
     float exactChange = 12.86f;
 
-    bool doorIsOpen = true
-    bool makeASound = false
-    bool activateSwitch = true
+    bool doorIsOpen = true;
+    bool makeASound = false;
+    bool activateSwitch = true;
 
     double numberOfTracks = 4; 
     double inputsAllowed = 24;
     double eqModesShown = 6;
 
     unsigned int balloonsPopped = 350;
-    unsigned int numberOmpeting);
-themyHeight, howManyTrees, moneyEarned, temperature, rotations, exactChange, doorIsOpen, makeASound, activateSwitch, numberOfTracks, inputsAllowed, eqModesShown, balloonsPopped, numberOfPlanesSeen, horsesCompetingoreUnused(number);  riable declared to the ignoreUnused() functioni}
-
-/* sssing each v 
-/* decl ed to the ignoreUnused() function
+    unsigned int numberOfPlanesSeen = 10;
+    unsigned int horsesCompeting = 24;
+    
+    ignoreUnused(number, myHeight, howManyTrees, moneyEarned, temperature, rotations, exactChange, doorIsOpen, makeASound, activateSwitch, numberOfTracks, inputsAllowed, eqModesShown, balloonsPopped, numberOfPlanesSeen, horsesCompeting); //Passing each variable declared to the ignoreUnused() function
 }
 
 /*
- 10 functions
- exa*/
-e:
- note: this example shows the result after completing steps 3-8
- */
+Declare 10 free functions
+note: this example shows the result after completing steps 3-8
+*/
+
 bool rentACar(int rentalDuration, int carType = 0)  //function declaration with random number of arguments, arbitrary number of arguments have default value
-{ 
-    ignoreUnused(rentalDuration, carType); //passing each function parameter to the ignoreUnuse v) d, ctdi'
-    return {}; //if your function rbool addLowPassFilter(int slopeType = 2, float cutoffFreq = 100.0f)ur{
+{
+    ignoreUnused(rentalDuration, carType); //passing each function parameter to the ignoreUnused function
+    return {}; //if your function returns anything other than 'void,' add 'return {}};' to the end of it 
+}
+
+//1)
+bool lowPassFilter(int slopeType = 2, float cutoffFreq = 100.0f)
+{
     ignoreUnused(slopeType, cutoffFreq);
     return {};
 }
 
+//2)
 int distanceWalkedToday(int numbOfSteps, float milesPerHour = 12.3f)
 {
     ignoreUnused(numbOfSteps, milesPerHour);
     return {};
 }
-sofloat initFrequency(bool sawtoothWave, bool squareWave, bool sineWave);
+
+//3)
+float initFrequency(bool sawtoothWave, bool squareWave, bool sineWave)
 {
-    ignoreUnused(sawtoothWave, sqaureWave, sineWave);
+    ignoreUnused(sawtoothWave, squareWave, sineWave);
     return {};
-}hi
-double stepLength(int beatDivision, int timeSignature, bool tempoMatching = true);
+}
+
+//4)
+double stepLength(int beatDivision, int timeSignature, bool tempoMatching = true)
 {
     ignoreUnused(beatDivision, timeSignature, tempoMatching);
     return {};
-}oft.int busEffects(bool reverbOn = true, bool delayOn = false, int wetDryMix = 50);
+}
+
+//5)
+int busEffects(bool reverbOn = true, bool delayOn = false, int wetDryMix = 50)
 {
     ignoreUnused(reverbOn, delayOn, wetDryMix);
     return {};
-} /*void defaultLoopLength(int defaultMeasures, int defaultNumOfBeats);
+} 
+
+//6)void defaultLoopLength(int defaultMeasures, int defaultNumOfBeats)
 {
     ignoreUnused(defaultMeasures, defaultNumOfBeats);
 }
 
-int totalNumOfTracks(int audioTracks, int midiTracks,);
+//7)
+int totalNumOfTracks(int audioTracks, int midiTracks)
 {
     ignoreUnused(audioTracks, midiTracks);
     return {};
 }
 
-double equipmentBudget(float percentageOfIncome = 49.9f, int analogSynths = 4, int programmingCourses = 10);
+//8)
+double equipmentBudget(float percentageOfIncome = 49.9f, int analogSynths = 4, int programmingCourses = 10)
 {
     ignoreUnused(percentageOfIncome, analogSynths, programmingCourses);
     return {};
 }
 
-int hamburgersEaten(int withFries = 3, int withoutFries = 2, float withOnions = 0.5f);
+//9)
+int hamburgersEaten(int withFries = 3, int withoutFries = 2, float withOnions = 0.5f)
 {
     ignoreUnused(withFries, withoutFries, withOnions);
     return {};
 }
 
-void fastFoodReceipts(int mcdonalds = 3, int wendys = 2, int carlsJr = 1);
+//10)
+void fastFoodReceipts(int mcdonalds = 3, int wendys = 2, int carlsJr = 1)
 {
     ignoreUnused(mcdonalds, wendys, carlsJr);
 }
 
- 6)
- */
-
-/*
- 7)
- */
-
-/*
- 8)
- */
-
-/*
- 9)
- */
-
-/*
- 10)
- */
 
 /*
  MAKE SURE YOU ARE NOT ON THE MASTER BRANCH
@@ -184,28 +186,24 @@ int main()
     //example of calling that function, storing the value, and passing it to ignoreUnused at the end of main()
     auto carRented = rentACar(6, 2); 
     
-    //1)
+    auto lPFilter = lowPassFilter();
     
-    //2)
+    auto distWalked = distanceWalkedToday(6034);
     
-    //3)
+    auto initFreq = initFrequency(true, false, true);
     
-    //4)
+    auto seqSteps = stepLength(16, 4);
     
-    //5)
+    auto effectsBus = busEffects();
     
-    //6)
+    auto numOfTracks = totalNumOfTracks(8, 12);
     
-    //7)
+    auto equipBudget = equipmentBudget();
     
-    //8)
-    
-    //9)
-    
-    //10)
+    auto burgersEaten = hamburgersEaten();
     
     
-    ignoreUnused(carRented);
+    ignoreUnused(carRented, lPFilter, distWalked, initFreq, seqSteps, effectsBus, numOfTracks, equipBudget, burgersEaten);
     std::cout << "good to go!" << std::endl;
     return 0;    
 }
